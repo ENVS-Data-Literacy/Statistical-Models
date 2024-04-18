@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Homework</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="ModelsHomework_files/libs/clipboard/clipboard.min.js"></script>
+<script src="ModelsHomework_files/libs/quarto-html/quarto.js"></script>
+<script src="ModelsHomework_files/libs/quarto-html/popper.min.js"></script>
+<script src="ModelsHomework_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="ModelsHomework_files/libs/quarto-html/anchor.min.js"></script>
+<link href="ModelsHomework_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="ModelsHomework_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="ModelsHomework_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="ModelsHomework_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="ModelsHomework_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Homework</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="statistical-inferences" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-inferences">Statistical Inferences</h2>
+<p>We use statistical models to gain confidence about phenomenon in the world around us. The route we take in these analyses depending on the characteristics of the data we are using. In the general discussion of the nature of statistical inferencdes I used the following graphic.</p>
+<p><img src="media/predictor_response.png" class="img-fluid"></p>
+<p>The takehome here is that the kinds of hypotheses you will be addressing are dictated by the data and the nature of the question itself.</p>
+<p>This homework is quite open-ended and will require you to start thinking about the totality of the question being asked. For the questions below, please include <em>all</em> of the following information.</p>
+<ol type="1">
+<li>The specific null hypothesis being examined.<br>
+</li>
+<li>A narrative about the data and why you decided to use that particular kind of analysis.</li>
+<li>Any preliminary evaluation of the data. For example,if you are going to use a parametric model, are the data normal? How do you know?</li>
+<li>What are the results of the statistical evaluation?</li>
+<li>What are your interpretations of the results?</li>
+</ol>
+<p>These <strong>must</strong> all be done in a narrative context, I <em>do not</em> want to see any R chunks or raw output—it must all be integrated into the document and hidden from the reader.</p>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<ol type="1">
+<li><p>Using the Rice Center Data, summarize the daily high, mean, and low for both air temperature and barometric pressure during the first week of February. Are these atmospheric variable independent?</p></li>
+<li><p>Using data from the last two weeks of January, what is the relationship between all pairs of aquatic variables?</p></li>
+<li><p>Is the average overnight air temperatures for Mondays in January above freezing?</p></li>
+<li><p>Is there a difference in the total amount of rain at the Rice Center between days of the week?</p></li>
+<li><p>Lifestyle choices may have a singificant impact on health. In the <code>data</code> folder, there is a data set consisting of data representing the proporiton of indiviudals who bike to work, smoke, and have heart disease in a set of replicate localities. To what extent is the prevailance of heart disease related to these lifestyle choices?</p></li>
+</ol>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
